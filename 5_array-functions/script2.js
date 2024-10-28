@@ -34,6 +34,13 @@ remarque: some et filter retourne true si un SEUL element a enquete la condition
 const nombres = [1,2,3,4,5,6,]
 console.log(nombres.some((value)=> value >= 3))//true
 
-//every retouner true si la tous les element enquete la condition
+//every :retouner true si la tous les element enquete la condition
 const num2 = [1,2,3,4,5,6]
 console.log(num2.every((value)=> value > 3))
+
+//reduce : prendere un table et retounrne en seul element apres un traitement
+const reduceNumbers = [1,2,3]
+const reduce = reduceNumbers.reduce((accumulation,correntValue)=>{
+         return accumulation + correntValue
+},0)// don't forgot the intilise value
+console.log("le resulat est: "+reduce)
