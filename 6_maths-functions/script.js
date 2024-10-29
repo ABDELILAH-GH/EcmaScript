@@ -1,5 +1,9 @@
 /*
 Math.trunc 
+Math.sign
+Math.cbrt
+Math.log
+number ** 3 = Math.pow(number,3)
 
 */
 
