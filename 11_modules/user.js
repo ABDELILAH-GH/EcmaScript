@@ -6,4 +6,4 @@ export const job = "developer";
 //----------nomed export 
 // export{name,age,job}
 
-const displayUser = ()=>`name: ${name} age: ${age} job:${job}`
+export const displayUser = ()=>`name: ${name} age: ${age} job:${job}`
