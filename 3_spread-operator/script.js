@@ -31,5 +31,7 @@ const fruit2 = {
 }
 console.log({...fruit})
 console.log({...fruit2})
+// pour faire un copier 
+const obj = {...contries}
 // -----------------------------object merge--------------------
 console.log({...fruit,...fruit2})
