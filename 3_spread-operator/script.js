@@ -4,6 +4,10 @@
 const contries = ["maroc","algerie","tunisie"]
 const contries2 = ["usa","canada","brazil"]
 console.table(...contries) //maroc algerie tunisie
+// pour faire un copier d'un tableau
+const newTab = [...contries]
+console.log('newTab: ',newTab)
+
 console.table([...contries])// retourner un tableau
 console.table(contries)// retoutner un tableau
 
