@@ -1,6 +1,16 @@
 /*
 Fonction pure : afficherSomme affiche une somme sans effets de bord.
-Fonction impure : afficherEtIncrementer modifie une variable globale et affiche son état à chaque appel.
+function addition(a, b) {
+   return a + b;
+}
+
+Fonction impure : afficherEtIncrementer modifie une variable globale et affiche son état à chaque appel
+let compteur = 0;
+function incrementerCompteur() {
+   compteur += 1; // Modifie la variable globale 'compteur'
+   return compteur;
+}
+.
 */
 // les fonctions impure
 let compteur = 0;
