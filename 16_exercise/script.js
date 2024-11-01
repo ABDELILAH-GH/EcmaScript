@@ -45,3 +45,21 @@ const equipePlusButsAway = Buteurs.reduce((max, buteur) => {
    return (buteur.goals.away > max.goals.away) ? buteur : max;
 }, Buteurs[0]).team;
 console.log(equipePlusButsAway);
+
+
+//
+const stagiaires = [
+  { id: 777, nom: "stage1", groupe: "DEV101" },
+  { id: 444, nom: "stage2", groupe: "DEV101" }
+];
+
+const notes = stagiaires.map(stagiaire => ({
+  id: stagiaire.id,
+  nom: stagiaire.nom,
+  groupe: stagiaire.groupe,
+  notes: [
+    { matiere: "React", note: 16 },
+    { matiere: "Agile", note: 15 }
+  ]
+}));
+console.log(notes)

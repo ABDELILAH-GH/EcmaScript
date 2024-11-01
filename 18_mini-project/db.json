@@ -2,18 +2,21 @@
   "etudiants": [
     {
       "id": 1,
-      "name": "ghoummach",
+      "first_name":"abdelilah",
+      "last_name":"ghoummach",
       "date": "2005-08-15",
       "note": 18
     },
     {
-      "name": "Salima Salimi",
+      "first_name":"Salima",
+      "last_name": " Salimi",
       "date": "2020-08-15",
       "note": 9,
       "id": 3
     },
     {
-      "name": "hassan",
+      "first_name": "hassan",
+      "last_name": "el alami",
       "date": "2002-02-15",
       "note": 5,
       "id": 4

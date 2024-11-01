@@ -1,4 +1,4 @@
- class Etudiant{
+ export class Etudiant{
    // le consturtor a permet de crees des objects
           static #counter = 1
           #id = 1
@@ -29,4 +29,3 @@
    // console.log(et1.info())
 //  console.log(et1.aniverssaire())
 //   console.log(et1.chnagerVille("casaBlanca"))
- 

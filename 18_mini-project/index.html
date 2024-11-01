@@ -4,14 +4,33 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Gestion Stagiaire</title>
-            <script src="js/script.js"></script>
+            <script src="js/script.js" defer type="module"></script>
             <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
    <div class="container">
           <div id="app">
-
+            <h1>Listes des Stagiaire</h1>
+              <div
+               class="table-responsive">
+               <table
+                  class="table table-info">
+                  <thead>
+                     <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prenom</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Note</th>
+                     </tr>
+                  </thead>
+                  <tbody class="liste-stagiaire">
+                  
+                  </tbody>
+               </table>
+              </div>
+              
           </div>
    </div>
 </body>
