@@ -1,0 +1,1 @@
+console.logt(f(3,9))
