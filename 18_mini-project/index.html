@@ -4,25 +4,51 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Gestion Stagiaire</title>
-            <script src="js/script.js" defer type="module"></script>
+            <script src="js/script.mjs" defer type="module"></script>
             <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
             <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
    <div class="container">
           <div id="app">
+            <h1>Ajouter Stagiaire</h1>
+            <!-- en utilise onsubmit = "return false pour eviter dd'envoyer les donnes apres le click sur ajouter" -->
+         <form action="post" onsubmit="return false">
+            <div class="mb-3">
+               <label for="" class="form-label">First Name</label>
+               <input type="text" class="form-control"name="first_name" id="first_name" placeholder="enrtrez votre prenom"/>
+            </div>
+            <div class="mb-3">
+               <label for="" class="form-label">Last Name</label>
+               <input type="text" class="form-control"name="last_name" id="last_name" placeholder="enrtrez votre nom"/>
+            </div>
+            <div class="mb-3">
+               <label for="" class="form-label">Date</label>
+               <input type="date" class="form-control"name="date" id="date" placeholder="entrez votre date de naissance"/>
+            </div>
+            <div class="mb-3">
+               <label for="" class="form-label">Note</label>
+               <input type="number" class="form-control"name="note" id="note" max="20" min="0" step="0.25" placeholder="enrtrez votre note"/>
+            </div>
+            <div class="mb-3">
+                <button class="form-control btn btn-success" id="add">Ajouter</button>
+            </div>
+         </form>
             <h1>Listes des Stagiaire</h1>
+            <span><button class="btn btn-primary" id="refresh">Actualiser la liste</button></span>
               <div
-               class="table-responsive">
+               class="table-responsive my-3">
                <table
-                  class="table table-info">
+                  class="table table">
                   <thead>
-                     <tr>
+                     <tr class="table-primary">
                         <th scope="col">Id</th>
-                        <th scope="col">Nom</th>
                         <th scope="col">Prenom</th>
+                        <th scope="col">Nom</th>
                         <th scope="col">Age</th>
                         <th scope="col">Note</th>
+                        <th scope="col">Supprimer</th>
+
                      </tr>
                   </thead>
                   <tbody class="liste-stagiaire">
