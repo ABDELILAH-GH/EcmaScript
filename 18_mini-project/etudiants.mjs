@@ -31,6 +31,7 @@ export class Etudiant {
         note: this.note,
       }),
     });
+    
     // console.log(response);
     return response;
   };
